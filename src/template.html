@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="{{@lang}}" data-script="{{@script}}" style="--f-script:{{@scriptFont}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#1d1a17">
+<meta name="robots" content="noindex">
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.desc}}">
+<link rel="canonical" href="{{@url}}">
+{{@alternates}}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sell Front">
+<meta property="og:title" content="{{meta.title}}">
+<meta property="og:description" content="{{meta.desc}}">
+<meta property="og:url" content="{{@url}}">
+<meta property="og:image" content="{{@base}}assets/og-{{@lang}}.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="{{@locale}}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{@p}}assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{@p}}assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&family=Noto+Serif:wght@400&text=%E2%82%B9&display=swap">
+{{@scriptFontLink}}
+<link rel="stylesheet" href="{{@p}}assets/site.css?v={{@ver}}">
+</head>
+<body>
+<a class="skip" href="#s1">{{cover.title1}}</a>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="{{@home}}" aria-label="Sell Front"><img src="{{@p}}assets/logo.svg" alt="Sell Front" width="119" height="32"></a>
+    <span class="tag">{{ui.proposal}}</span>
+    <nav class="langs" aria-label="{{ui.readIn}}">
+      <span class="langs-label">{{ui.readIn}}</span>
+      <div class="chips">{{@chips}}</div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- 1 · Cover -->
+  <section class="slide dark cover" id="s1">
+    <div class="cover-text">
+      <img class="cover-logo" src="{{@p}}assets/logo-dark.svg" alt="Sell Front" width="186" height="50">
+      <h1>{{cover.title1}}<br>{{cover.title2}}</h1>
+      <p class="cover-sub">{{cover.sub}}</p>
+      <p class="cover-line">{{cover.line}}</p>
+      <div class="cover-cta">
+        <span class="pill">{{cover.price}}</span>
+        <a class="cover-link" href="https://sellfront.in" target="_blank" rel="noopener">sellfront.in</a>
+      </div>
+    </div>
+    <div class="cover-shots" aria-hidden="false">
+      <a class="frame f1" href="https://carron-clothing.sellfront.in" target="_blank" rel="noopener">
+        <span class="bar"><i></i><i></i><i></i><b>carron-clothing.sellfront.in</b></span>
+        <img src="{{@p}}assets/carron-clothing.webp" alt="Carron Clothing · {{shops.alt}}" width="1120" height="700">
+      </a>
+      <a class="frame f2" href="https://sb-creations.sellfront.in" target="_blank" rel="noopener">
+        <span class="bar"><i></i><i></i><i></i><b>sb-creations.sellfront.in</b></span>
+        <img src="{{@p}}assets/sb-creations.webp" alt="SB Creations · {{shops.alt}}" width="1120" height="700">
+      </a>
+    </div>
+  </section>
+
+  <!-- 2 · What it does -->
+  <section class="slide light" id="s2">
+    <span class="num" aria-hidden="true">02</span>
+    <p class="kicker">{{feat.kicker}}</p>
+    <h2>{{feat.title}}</h2>
+    <div class="tiles">
+      <article class="tile"><span class="dash"></span><h3>{{feat.1.h}}</h3><p>{{feat.1.b}}</p></article>
+      <article class="tile"><span class="dash alt"></span><h3>{{feat.2.h}}</h3><p>{{feat.2.b}}</p></article>
+      <article class="tile"><span class="dash"></span><h3>{{feat.3.h}}</h3><p>{{feat.3.b}}</p></article>
+      <article class="tile"><span class="dash alt"></span><h3>{{feat.4.h}}</h3><p>{{feat.4.b}}</p></article>
+      <article class="tile"><span class="dash"></span><h3>{{feat.5.h}}</h3><p>{{feat.5.b}}</p></article>
+      <article class="tile"><span class="dash alt"></span><h3>{{feat.6.h}}</h3><p>{{feat.6.b}}</p></article>
+    </div>
+  </section>
+
+  <!-- 3 · Full control -->
+  <section class="slide light" id="s3">
+    <span class="num" aria-hidden="true">03</span>
+    <p class="kicker">{{ctrl.kicker}}</p>
+    <h2>{{ctrl.title}}</h2>
+    <div class="cols">
+      <article class="col">
+        <p class="col-tag">{{ctrl.a.tag}}</p>
+        <h3>{{ctrl.a.title}}</h3>
+        <ol>
+          <li>{{ctrl.a.1}}</li><li>{{ctrl.a.2}}</li><li>{{ctrl.a.3}}</li><li>{{ctrl.a.4}}</li>
+        </ol>
+      </article>
+      <article class="col indigo">
+        <p class="col-tag">{{ctrl.b.tag}}</p>
+        <h3>{{ctrl.b.title}}</h3>
+        <ol>
+          <li>{{ctrl.b.1}}</li><li>{{ctrl.b.2}}</li><li>{{ctrl.b.3}}</li><li>{{ctrl.b.4}}</li>
+        </ol>
+      </article>
+    </div>
+  </section>
+
+  <!-- 4 · Live shops -->
+  <section class="slide light" id="s4">
+    <span class="num" aria-hidden="true">04</span>
+    <p class="kicker">{{shops.kicker}}</p>
+    <h2>{{shops.title}}</h2>
+    <div class="shops">
+      <a class="shop" href="https://sb-creations.sellfront.in" target="_blank" rel="noopener">
+        <span class="frame"><span class="bar"><i></i><i></i><i></i></span><img src="{{@p}}assets/sb-creations.webp" alt="SB Creations · {{shops.alt}}" width="1120" height="700" loading="lazy"></span>
+        <strong>SB Creations</strong><span class="what">{{shops.sb}}</span><span class="url">sb-creations.sellfront.in</span>
+      </a>
+      <a class="shop" href="https://carron-clothing.sellfront.in" target="_blank" rel="noopener">
+        <span class="frame"><span class="bar"><i></i><i></i><i></i></span><img src="{{@p}}assets/carron-clothing.webp" alt="Carron Clothing · {{shops.alt}}" width="1120" height="700" loading="lazy"></span>
+        <strong>Carron Clothing</strong><span class="what">{{shops.carron}}</span><span class="url">carron-clothing.sellfront.in</span>
+      </a>
+      <a class="shop" href="https://viral-marketing.sellfront.in" target="_blank" rel="noopener">
+        <span class="frame"><span class="bar"><i></i><i></i><i></i></span><img src="{{@p}}assets/viral-marketing.webp" alt="Viral Marketing · {{shops.alt}}" width="1120" height="700" loading="lazy"></span>
+        <strong>Viral Marketing</strong><span class="what">{{shops.viral}}</span><span class="url">viral-marketing.sellfront.in</span>
+      </a>
+      <a class="shop" href="https://naurascent-candles.sellfront.in" target="_blank" rel="noopener">
+        <span class="frame"><span class="bar"><i></i><i></i><i></i></span><img src="{{@p}}assets/naurascent-candles.webp" alt="Naurascent Candles · {{shops.alt}}" width="1120" height="700" loading="lazy"></span>
+        <strong>Naurascent Candles</strong><span class="what">{{shops.naurascent}}</span><span class="url">naurascent-candles.sellfront.in</span>
+      </a>
+    </div>
+    <p class="band"><b>{{shops.band.lead}}</b> {{shops.band.text}}</p>
+  </section>
+
+  <!-- 5 · Marketing -->
+  <section class="slide dark" id="s5">
+    <span class="num" aria-hidden="true">05</span>
+    <p class="kicker">{{mkt.kicker}}</p>
+    <h2>{{mkt.title}}</h2>
+    <ol class="flow">
+      <li class="first">{{mkt.f1}}</li><li>{{mkt.f2}}</li><li>{{mkt.f3}}</li><li>{{mkt.f4}}</li><li class="last">{{mkt.f5}}</li>
+    </ol>
+    <div class="tiles three">
+      <article class="tile"><span class="dash"></span><h3>{{mkt.1.h}}</h3><p>{{mkt.1.b}}</p></article>
+      <article class="tile"><span class="dash alt"></span><h3>{{mkt.2.h}}</h3><p>{{mkt.2.b}}</p></article>
+      <article class="tile"><span class="dash"></span><h3>{{mkt.3.h}}</h3><p>{{mkt.3.b}}</p></article>
+    </div>
+  </section>
+
+  <!-- 6 · Try it -->
+  <section class="slide dark" id="s6">
+    <span class="num" aria-hidden="true">06</span>
+    <p class="kicker">{{try.kicker}}</p>
+    <h2>{{try.title}}</h2>
+    <div class="try">
+      <ol class="steps">
+        <li><span class="dot">1</span><div><h3>{{try.1.h}}</h3><p>{{try.1.b}}</p></div></li>
+        <li><span class="dot">2</span><div><h3>{{try.2.h}}</h3><p>{{try.2.b}}</p></div></li>
+        <li><span class="dot">3</span><div><h3>{{try.3.h}}</h3><p>{{try.3.b}}</p></div></li>
+        <li><span class="dot red">4</span><div><h3>{{try.4.h}}</h3><p>{{try.4.b}}</p></div></li>
+      </ol>
+      <div class="qr-card">
+        <img class="qr" src="{{@p}}assets/qr.png" alt="{{try.scan}}" width="200" height="200">
+        <p class="qr-label">{{try.scan}}</p>
+        <a class="wa-btn" href="https://wa.me/919100135984?text=Start%20my%20shop" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+          {{try.button}}
+        </a>
+        <span class="wa-url">wa.me/919100135984</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · Price -->
+  <section class="slide light" id="s7">
+    <span class="num" aria-hidden="true">07</span>
+    <p class="kicker">{{price.kicker}}</p>
+    <h2>{{price.title}}</h2>
+    <div class="price">
+      <div class="price-card">
+        <p class="amount">₹999</p>
+        <p class="per">{{price.per}}</p>
+        <p class="notes"><span>{{price.note1}}</span><span>{{price.note2}}</span></p>
+      </div>
+      <div class="next">
+        <h3>{{price.steps}}</h3>
+        <ol class="big-steps">
+          <li><span>01</span>{{price.s1}}</li>
+          <li><span>02</span>{{price.s2}}</li>
+          <li><span>03</span>{{price.s3}}</li>
+        </ol>
+        <div class="contact">
+          <p class="who"><b>Alok Verma</b> · {{contact.role}}</p>
+          <p><a href="mailto:alok@sellfront.in">alok@sellfront.in</a> · <a href="tel:+917408092857">+91 74080 92857</a></p>
+          <p><a href="https://sellfront.in" target="_blank" rel="noopener">sellfront.in</a> · <a href="https://www.linkedin.com/company/sellfront/" target="_blank" rel="noopener">linkedin.com/company/sellfront</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <nav class="langs" aria-label="{{ui.readIn}}">
+    <span class="langs-label">{{ui.readIn}}</span>
+    <div class="chips">{{@chips}}</div>
+  </nav>
+  <p>© 2026 Sell Front · <a href="https://sellfront.in" target="_blank" rel="noopener">sellfront.in</a></p>
+</footer>
+<script src="{{@p}}assets/site.js?v={{@ver}}" defer></script>
+</body>
+</html>
